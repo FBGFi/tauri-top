@@ -1,8 +1,34 @@
-# Tauri Plugins
+# Tauri + React + Typescript
 
-[Documentation](https://tauri.app/v1/guides/features/plugin)
+## Prerequisites
 
-In previous example, we created our own logic for handling low level operations. Essentially this has no difference to what plugins are. Plugins are just collection of code that somebody has created, which can be applied to the backend and then be called from the frontend.
+[Guide at tauri documentation](https://tauri.app/v1/guides/getting-started/prerequisites)
 
-In this example we add plugin for creating a persistent key-value store using [tauri-plugin-store](https://github.com/tauri-apps/tauri-plugin-store), which we use to save theming options for the application.
+### Windows
 
+- Install [Node.js](https://nodejs.org/en)
+- Install [Visual Studio build tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+  - Select MSVC and Windows 10/11 SDK
+- Install [Rust](https://www.rust-lang.org/tools/install)
+  - Most likely requires restarting the computer
+
+### MacOS
+
+- Install [Node.js](https://nodejs.org/en)
+- Install development dependencies
+  - ```xcode-select --install```
+- Install Rust
+  - ```curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh```
+
+### Recommended VS Code extensions
+
+- Rust
+  - Contains language server and rust-analyzer for error highlighting
+- Rust prettier
+  - Auto formatting code for better readability (Alt+Shift+F)
+
+## Initializing the app
+
+- Run ```npm create tauri-app@latest``` (note that in Windows this must be run in Powershell, VS Code integrated terminal or Windows terminal, Git bash does not work)
+- Select preferred project framework
+- Run command ```npm run tauri dev``` to start the example app
